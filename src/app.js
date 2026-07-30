@@ -13,7 +13,7 @@ app.use(morgan("dev"));
 
 // Ruta de salud (health check) en la raíz
 app.get("/health", (_req, res) => {
-  res.json({ estado: "ok", timestamp: new Date().toISOString(), servicio: "backend-node-w-mongo" });
+  res.json({ estado: "ok", timestamp: new Date().toISOString(), servicio: "backend-node-w-mongo-v2" });
 });
 
 // Rutas de la API
