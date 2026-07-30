@@ -11,6 +11,11 @@ app.use(cors());
 app.use(express.json());
 app.use(morgan("dev"));
 
+// Ruta de salud (health check) en la raíz
+app.get("/health", (_req, res) => {
+  res.json({ estado: "ok", timestamp: new Date().toISOString(), servicio: "backend-node-w-mongo" });
+});
+
 // Rutas de la API
 app.use("/api", routes);
 

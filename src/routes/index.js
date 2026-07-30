@@ -12,9 +12,4 @@ const router = Router();
 router.use("/usuarios", userRoutes);
 router.use("/productos", productRoutes);
 
-// Ruta de salud (health check)
-router.get("/health", (_req, res) => {
-  res.json({ estado: "ok", timestamp: new Date().toISOString(), servicio: "backend-node-w-mongo" });
-});
-
 export default router;
