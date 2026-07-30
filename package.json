@@ -1,0 +1,42 @@
+{
+  "name": "base_node_express",
+  "version": "1.0.0",
+  "description": "API REST con Node.js, Express y MongoDB (Atlas). Gestión de usuarios y productos.",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --forceExit --detectOpenHandles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leoroan/base_node_express.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "mongodb",
+    "mongoose",
+    "api",
+    "rest"
+  ],
+  "author": "Leandro Maselli + Others",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leoroan/base_node_express/issues"
+  },
+  "homepage": "https://github.com/leoroan/base_node_express#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.8.1",
+    "morgan": "^1.11.0",
+    "nodemon": "^3.1.14"
+  },
+  "devDependencies": {
+    "jest": "^30.4.2",
+    "supertest": "^7.2.2"
+  }
+}
