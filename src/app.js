@@ -15,11 +15,11 @@ app.use(morgan("dev"));
 app.use(
   threatLogger({
     endpoint: "https://threat-sentinel.myselfproductions.me",
-    sourceApplication: "backend-vtv",
+    sourceApplication: "base_node_express_con_mongo",
   })
 );
 
-// Ruta de salud (health check) en la raíz
+// Ruta de salud de la app
 app.get("/health", (_req, res) => {
   res.json({ estado: "ok", timestamp: new Date().toISOString(), servicio: "backend-node-w-mongo-v2" });
 });
