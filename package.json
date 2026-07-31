@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/leoroan/base_node_express#readme",
   "dependencies": {
+    "@lean/threat-sentinel-client": "github:Leoroan/threat-sentinel-client",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
